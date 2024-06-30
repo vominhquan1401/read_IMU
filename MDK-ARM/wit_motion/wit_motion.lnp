@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"wit_motion\startup_stm32f103xb.o"
+"wit_motion\main.o"
+"wit_motion\stm32f1xx_it.o"
+"wit_motion\stm32f1xx_hal_msp.o"
+"wit_motion\stm32f1xx_hal_gpio_ex.o"
+"wit_motion\stm32f1xx_hal_tim.o"
+"wit_motion\stm32f1xx_hal_tim_ex.o"
+"wit_motion\stm32f1xx_hal_uart.o"
+"wit_motion\stm32f1xx_hal.o"
+"wit_motion\stm32f1xx_hal_rcc.o"
+"wit_motion\stm32f1xx_hal_rcc_ex.o"
+"wit_motion\stm32f1xx_hal_gpio.o"
+"wit_motion\stm32f1xx_hal_dma.o"
+"wit_motion\stm32f1xx_hal_cortex.o"
+"wit_motion\stm32f1xx_hal_pwr.o"
+"wit_motion\stm32f1xx_hal_flash.o"
+"wit_motion\stm32f1xx_hal_flash_ex.o"
+"wit_motion\stm32f1xx_hal_exti.o"
+"wit_motion\system_stm32f1xx.o"
+"wit_motion\angel.o"
+--strict --scatter "wit_motion\wit_motion.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "wit_motion.map" -o wit_motion\wit_motion.axf
